@@ -5,9 +5,14 @@ const Character = () => {
 	return (
 		<div
 			className='absolute -bottom-12
-		-right-7 mt-28 w-1/2'
+		-right-1 w-1/2'
 		>
-			<img draggable={false} alt='' src={CharacterImg} />
+			<img
+				draggable={false}
+				alt=''
+				src={CharacterImg}
+				style={{ maxHeight: 750 }}
+			/>
 		</div>
 	)
 }

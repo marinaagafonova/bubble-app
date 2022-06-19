@@ -40,7 +40,7 @@ const Carousel = () => {
 	const [slides] = useState(initialSlides)
 	const [currentIndex, setCurrentIndex] = useState(0)
 	return (
-		<div className='mt-24'>
+		<div className='mt-12'>
 			<div className='flex items-center mb-5'>
 				<Controls
 					slidesLength={slides.length}

@@ -3,12 +3,18 @@ import logoImg from '../../../assets/images/mayor_grom_Doc_Logo.png'
 
 const Content = () => {
 	return (
-		<div className='mt-28 w-1/2'>
-			<img alt='' src={logoImg} className='mb-10 -ml-12' draggable={false} />
+		<div className='mt-7 ml-14 w-1/2'>
+			<img
+				alt=''
+				src={logoImg}
+				className='mb-10 ml-14'
+				draggable={false}
+				style={{ maxHeight: 350 }}
+			/>
 			<div className='flex ml-5'>
 				<p
 					className='text-white opacity-70 leading-8 text-lg'
-					style={{ maxWidth: '70%' }}
+					style={{ maxWidth: '80%' }}
 				>
 					Майор полиции Игорь Гром известен всему Санкт-Петербургу пробивным
 					характером и непримиримой позицией по отношению к преступникам всех
