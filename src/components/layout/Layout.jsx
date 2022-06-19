@@ -1,5 +1,6 @@
 import React from 'react'
 import BgImage from '../../assets/images/backimage.jpg'
+import Modal from '../screens/home/Modal'
 import Header from './header/Header'
 import SocialMedia from './SocialMedia'
 
@@ -15,6 +16,7 @@ const Layout = ({ children }) => {
 			<div className='relative z-1'>
 				<Header />
 				<SocialMedia />
+				<Modal />
 				{children}
 			</div>
 		</div>
