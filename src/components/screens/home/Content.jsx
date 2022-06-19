@@ -1,16 +1,19 @@
 import React from 'react'
 import logoImg from '../../../assets/images/mayor_grom_Doc_Logo.png'
+import LazyLoad from 'react-lazyload'
 
 const Content = () => {
 	return (
 		<div className='mt-7 ml-14 w-1/2'>
-			<img
-				alt=''
-				src={logoImg}
-				className='mb-10 ml-14'
-				draggable={false}
-				style={{ maxHeight: 350 }}
-			/>
+			<LazyLoad once>
+				<img
+					alt=''
+					src={logoImg}
+					className='mb-10 ml-14'
+					draggable={false}
+					style={{ maxHeight: 350 }}
+				/>
+			</LazyLoad>
 			<div className='flex ml-5'>
 				<p
 					className='text-white opacity-70 leading-8 text-lg'
