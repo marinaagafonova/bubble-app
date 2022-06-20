@@ -4,6 +4,7 @@ import Content from './Content'
 import Details from './Details'
 import Character from './Character'
 import Carousel from './carousel/Carousel'
+import moize from 'moize'
 
 const Home = () => {
 	return (
@@ -16,4 +17,4 @@ const Home = () => {
 	)
 }
 
-export default Home
+export default moize(Home, { isReact: true })
